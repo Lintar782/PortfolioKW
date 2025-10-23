@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lintar Studio || Web 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <header id="main-header">
+        <div class="logo">Lintar Studio</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="cta-hire-me">Hire Me</button>
+    </header>
+
+    <main>
+        <section id="hero" class="full-screen-section">
+            <div class="hero-content">
+                <h1 class="neon-text">Crafting Digital Experiences in 3D & Code</h1>
+                <p>Front End Devoloper</p>
+                <button class="cta-explore">Explore My Work</button>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="neon-text">About Me</h2>
+            <div class="about-grid">
+                <div class="text-content">
+                    <p>Halo! Saya Lintar, seorang Creative Front-End Developer yang bersemangat menggabungkan desain futuristik dengan interaksi WebGL yang imersi. Filosofi saya adalah menjembatani seni visual dan fungsionalitas kode.</p>
+                    <p>Saya fokus pada performa tinggi, animasi smooth, dan pengalaman pengguna yang meninggalkan kesan mendalam.</p>
+                    <button class="cta-download-cv">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17V3M12 17L15 14M12 17L9 14M5 21H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Download Cv
+                    </button>
+                </div>
+                <div class="visual-3d glass-box">
+                    <p class="neon-text">3D Avatar Placeholder</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2 class="neon-text">Selected Works</h2>
+            <div class="projects-grid">
+                <div class="project-title" data-category="Three.js">
+                    <div class="thumbnail">
+                        <h3>Cyberpunk City Viewer</h3>
+                        <p class="category">WebGL / Three.js</p>
+                        <button class="btn-view">View Project</button>
+                    </div>
+                    <div class="project-title" data-category="React/GSAP">
+                        <div class="thumbnail">
+                            <h3>Dynamic Data Dashboard</h3>
+                            <p class="category">React / GSAP</p>
+                            <button class="btn-view">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2 class="neon-text">Let's Build Something Amazing</h2>
+            <form action="" class="contact-form glass-box">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="cta-send">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Lintar Studio</div>
+            <div class="social">
+                <a href="https://github.com/" >Github</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="mailto:hello@lintar.studio">Email</a>
+            </div>
+        </div>
+        <p class="copyright">@ 2025 Lintar Studio</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script> <script src="webgl.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
